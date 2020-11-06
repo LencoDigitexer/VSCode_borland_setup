@@ -5,12 +5,12 @@
 1. Установите VSCode https://code.visualstudio.com/
 2. Чтобы был русский язык установите это [расширение](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
 3. Скачайте [borland.zip](https://github.com/LencoDigitexer/VSCode_borland_setup/releases/download/borland/Borland.zip)
-4. Распакуйте на диск C. Должно получиться так: C:\Borland\
+4. Распакуйте на диск C. Должно получиться так: C:\Borland\. Если у вас уже есть папка Borland на диске C, то можете заменить файлы или удалить папку и заново скопировать новую
 
 ## Настройка рабочего окружения
 1. Скачайте [vscode_borland.zip](https://github.com/LencoDigitexer/VSCode_borland_setup/releases/download/borland/vscode_borland.zip)
 2. Распакуйте архив
-3. Откройте его в VSCode, для этого в VSCode нажмите Файл - Открыть папку - Укажите папку "vscode_borland"
+3. Откройте папку vscode_borland в VSCode, для этого в VSCode нажмите Файл - Открыть папку - Укажите папку "vscode_borland"
 
 ## Запуск
 1. Проверьте, что у вас существует папка C:\Borland\BCC55\Bin
