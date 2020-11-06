@@ -19,7 +19,7 @@
 Например, я хочу, чтобы у меня был файл myprogramm.cpp, тогда файл cpp.bat будет выглядеть так
 ```
 path="C:\Borland\BCC55\Bin"
-C:\Borland\BCC55\Bin\bcc32.exe myprogramm.cpp
+C:\Borland\BCC55\Bin\bcc32.exe pr\myprogramm.cpp
 start start.bat
 ```
 Так же изменить файл start.bat
