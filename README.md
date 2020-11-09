@@ -1,6 +1,6 @@
 # VSCode_borland_setup
 Описание сборки Borland файлов в VS Code
-
+![Alt-текст](https://i.imgur.com/JctkOdq.jpeg)
 ## Установка IDE
 1. Установите VSCode https://code.visualstudio.com/
 2. Чтобы был русский язык установите это [расширение](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ru)
