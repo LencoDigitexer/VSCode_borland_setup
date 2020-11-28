@@ -6,42 +6,42 @@
 
 int main(void) {
     clrscr();
-    // объявление переменных и констант
+    // init variables
     float a, b, z;
     char ch;
     FILE * f;
     #define ESC 27
-    // открыть файл для записи
+    // open file
     if ((f = fopen("fil_dat\\pr11_EIN.dat", "w")) == NULL) {
-        fprintf(stderr, "Ошибка! Не удается открыть файл...\n");
+        fprintf(stderr, "Error! Can't open a file...\n");
         return 1;
     }
-	cout << "Привет, эта программа, определяющая\nпройдет ли график функции y = 5x^2 - 7x + 2 через заданную точку с координатами (a, b).\n";
+	cout << "Hi, this program determines whether the graph of the function y = 5x^2-7x + 2 passes through a given point with coordinates (a, b).\n";
     start:
-        // ввод аргументов
-		cout << "Введите a: ";
+        // input variables
+		cout << "Input a: ";
 		cin >> a;
-		cout << "Введите b: ";
+		cout << "Input b: ";
 		cin >> b;
-		// подставляем а - вместо x и проверяем, равняется ли это выражение числу b
+		// substitute a - for x and check whether this expression is equal to the number b
 		if(5*a*a-7*a+2 == b) {
-			cout << "[+] Точка с координатами " << "(" << a << ":" << b << ")" << " входит в график функции y = 5x^2 - 7x + 2" << endl;
-			fprintf (f, "[+] Точка с координатами a = %f\tb = %f\t входит в график функции y = 5x^2 - 7x + 2", a, b);
+			cout << "[+] Point with coordinates " << "(" << a << ":" << b << ")" << " included in the function schedule y = 5x^2 - 7x + 2" << endl;
+			fprintf (f, "[+] Point with coordinates a = %f\tb = %f\t included in the function schedule y = 5x^2 - 7x + 2", a, b);
 		}
-		// если выражение не равно b
+		// if the expression is not equal to b
 		else {
-			cout << "[-] Точка с координатами " << "(" << a << ":" << b << ")" << " не входит в график функции y = 5x^2 - 7x + 2" << endl;
-			fprintf (f, "[-] Точка с координатами a = %f\tb = %f\t не входит в график функции y = 5x^2 - 7x + 2", a, b);
+			cout << "[-] Point with coordinates " << "(" << a << ":" << b << ")" << " not included in the function schedule y = 5x^2 - 7x + 2" << endl;
+			fprintf (f, "[-] Point with coordinates a = %f\tb = %f\t not included in the function schedule y = 5x^2 - 7x + 2", a, b);
 		}
-		cout << "\nДля прекращения ввода Esc\n";
-		cout << "Для продолжения ввода - любую клавишу\n";
+		cout << "\nTo stop entering Esc\n";
+		cout << "To continue typing, press any key\n";
 		
 		if ((ch = getch()) != ESC){
 			goto start;
 		} else {
 			fclose(f);
 			
-			cout << "\nСпасибо за пользование моей программы\n";
+			cout << "\nThank you for using my program\n";
 			getch();
 		}
 		return 0;
