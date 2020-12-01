@@ -10,26 +10,26 @@ void main( void )
 	int i; char n; int _time;
 m:
 	Wind(4, 6, 29, 16, 0, 1);
-	gotoxy(2, 2); cout << "Tariff price";
-	gotoxy(2, 4); cout << "1 - Within the network";
-	gotoxy(2, 5); cout << "2 - Other operator";
-	gotoxy(2, 6); cout << "3 - To a local number";
-    gotoxy(1, 8); cout << "Talk time(seconds) => "; cin >> _time;
-	gotoxy(1, 10); cout << "input tariff num => "; cin >> i;
+	gotoxy(2, 2); cout << "Тарифные планы";
+	gotoxy(2, 4); cout << "1 - Внутри сети";
+	gotoxy(2, 5); cout << "2 - Другие операторы";
+	gotoxy(2, 6); cout << "3 - На городские номера";
+    gotoxy(1, 8); cout << "Время созвона(сек) => "; cin >> _time;
+	gotoxy(1, 10); cout << "Выбери номер тарифа => "; cin >> i;
 	switch(i)
 	{
 		case  1: _in(_time); break;
 		case  2: _other(_time); break;
 		case  3: _gor_number(_time); break;
-		default: gotoxy(2, 10); cout << "Error"; break;
+		default: gotoxy(2, 10); cout << "Ошибка"; break;
 	}
 	Wind(4, 19, 27, 21, 0, 18);
-	gotoxy(2, 2); cout << "Continue - y/n ";
+	gotoxy(2, 2); cout << "Продолжить? - y/n ";
 	if((n = getche()) == 'y' || n == 'Y')
 		goto m;
 	else
 	{
-		gotoxy(2, 2); clreol(); cout << "Goodbye!";
+		gotoxy(2, 2); clreol(); cout << "До свидания!";
 	}
 	getch();
 }
