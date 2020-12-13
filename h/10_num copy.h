@@ -4,7 +4,7 @@ int fil_num(char *name, int num)
 	// 1 - Определить указатель на файл 
 	FILE *f; 
     
-	char *ch = "fil_dat\\pr10_GKV.dat";
+	char *ch = "..\\fil_dat\\pr10_BTA.dat";
 	// 2 - Открыть файл и указать цель открытия
 	if ((f = fopen(ch, "w")) == NULL)
 	{
